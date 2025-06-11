@@ -5,7 +5,7 @@ This project details an ETL (Extract, Transform, Load) pipeline implemented on A
 The S3 bucket student-exam-data-normalization is designed with the following structure to manage raw input and normalized output data:
      s3://student-exam-data-normalization/raw/: This prefix is used to store the original, unprocessed data files from different schools (e.g., school1.csv, school2.json).
      s3://student-exam-data-normalization/output/standardized/: This prefix will house the normalized and merged data, saved in Parquet format.
-3. Workflow Overview
+3.Workflow Overview
 The data normalization workflow involves the following key steps on AWS:
 
 3.1. AWS Environment Preparation: An S3 bucket (student-exam-data-normalization) is created to hold raw and processed data. Raw data files (CSVs, JSONs) are uploaded to the raw/prefix within this bucket.
